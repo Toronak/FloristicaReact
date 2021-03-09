@@ -45,3 +45,12 @@ svg path {
    stroke-width:inherit;
 }
 
+@font-face{
+  font-family: "Forum";
+  src: url(./fonts/Forum-Regular.ttf)
+};
+
+:root{
+  --font-main:"Forum";
+}
+
