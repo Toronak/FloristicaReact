@@ -6,6 +6,7 @@
 
 body{
   scroll-behavior: smooth;
+  font-family: var(--font-main);
 }
 
 a{
@@ -36,10 +37,6 @@ button{
   cursor: pointer;
 }
 
-svg path {
-  fill:inherit;
-  stroke:inherit;
-}
   ul,ol,li{
    list-style: none;
    stroke-width:inherit;

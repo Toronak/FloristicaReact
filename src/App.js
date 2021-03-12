@@ -1,10 +1,11 @@
 import React from 'react';
-import './app.scss';
 import Footer from './components/footer/Footer';
+import Promotions from './components/promotions/Promotions';
 
 function App() {
   return (
     <>
+    <Promotions />
     <Footer/>
     </>
   );

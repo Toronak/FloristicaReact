@@ -4,11 +4,16 @@
   flex-direction: column;
   justify-content: center;
   padding: 21px 0 30px 0;
-}
-
-.footer-line{
-  width: 97vw;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);;
-  margin: 0 auto;
+    &__row{
+      width: 97vw;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);;
+      margin: 0 auto 21px auto;
+    }
+    &__mrt{
+      margin-top: 30px;
+    }
+    .social-box{
+      margin-top: 35px;
+    }
 }
