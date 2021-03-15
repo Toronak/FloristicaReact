@@ -1,0 +1,46 @@
+.card{
+  background-image: url(../../images/desktop/bg-card1.jpg);
+  background-size: cover;
+  background-position: center center;
+  flex: 1 1 calc(100% /4);
+  min-height: 450px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 39px 0 20px 20px;
+    &:not(:last-child){
+      margin-right: 50px;
+    }
+    &__number{
+      font-size: 20px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      position: relative;
+        &::after{
+          content: '';
+          width: 70px;
+          height: 1px;
+          background-color: white;
+          position: absolute;
+          bottom: 5px;
+          left: 25px;
+        }
+    }
+    &__title{
+      font-size: 16px;
+      line-height: 27px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      opacity: 0.9;
+      font-weight: normal;
+    }
+    
+    .btn{
+      margin-top: 10px;
+      display: none;
+    }
+}

@@ -11,7 +11,7 @@ function Promotions(props){
         <h2 className='promotion__title'>акционные<br/> предложения</h2>
         <div className='promotion__row'></div>
         <p className='promotion__text'>При заказе свадебного оформления предоставляется<br/> скидка на букет невесты и бутоньерку в размере 30%</p>
-        <Button text='заказать оформление'/>
+        <Button>заказать оформление</Button>
       </div>
       <div className='promotion__img'>
         <img className='promotion-img' src={promotion} alt="promotion"/>

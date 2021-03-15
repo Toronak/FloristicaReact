@@ -3,22 +3,24 @@
   margin: 0;
   padding: 0;
 }
-
+@-moz-document url-prefix() {
+  html{
+    scrollbar-width: none;
+  }
+}
 body{
   scroll-behavior: smooth;
   font-family: var(--font-main);
+  scrollbar-width: none; 
+    &::-webkit-scrollbar{
+      width: 0;
+      }
 }
 
 a{
   text-decoration: none;
   outline: none;
   color: #000000;
-}
-
-h1,h2,h3,h4,h5,h6,p{
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
 }
 
 textarea,input {
