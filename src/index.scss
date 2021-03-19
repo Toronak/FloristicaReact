@@ -14,9 +14,11 @@ body{
   scrollbar-width: none; 
     &::-webkit-scrollbar{
       width: 0;
-      }
+      }     
 }
-
+.active-modal{
+  overflow: hidden;
+}
 a{
   text-decoration: none;
   outline: none;

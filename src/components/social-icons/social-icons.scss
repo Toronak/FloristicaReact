@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 2s;
+  transition: all 0.4s;
     &__item{
       margin-right: 50px;
         &:last-child{
@@ -12,25 +12,30 @@
 }
 
 .icon{
-  transition: all 0.7s;
   &:hover{
       rect{
-        fill: white;
-        stroke: #3B181E;
-        transition: fill 0.7s;
-        transition: stroke 0.7s;
+        stroke-width: 2;
+        stroke: white;
+        transition: all 0.4s;
+        
       }
-      circle,path{
-        fill: #3B181E;
-        transition:all 0.7s;
+      circle{
+        stroke-width: 1.4;
+        transition:all 0.4s;
+        stroke: white;
+      }
+      path{
+        stroke-width: 0;
+        transition:all 0.4s;
+        stroke: white;
       }
   }
     &-wa{
       &:hover{
-        stroke:white;
-        path:last-child{
-          stroke: black;
-          fill: white;
+        path{
+          stroke-width: 0.4;
+          stroke: white;
+          transition:  all 0.4s;
         }
       }
     }

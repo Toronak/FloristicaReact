@@ -1,6 +1,7 @@
 .catalog{
   background-color: #3B181E;
   padding-top: 187px;
+  position: relative;
     &__container{
       max-width: 1590px;
       margin: 0 auto;
@@ -37,8 +38,8 @@
     }
     &__card-box{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      padding: 96px 20px 0 20px;
+      padding: 78px 20px 0 20px;
     }
 }

@@ -1,18 +1,15 @@
 .card{
-  background-image: url(../../images/desktop/bg-card1.jpg);
   background-size: cover;
   background-position: center center;
-  flex: 1 1 calc(100% /4);
   min-height: 450px;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   padding: 39px 0 20px 20px;
-    &:not(:last-child){
-      margin-right: 50px;
-    }
+  width: 330px;
+  flex: calc(100%/4) 1 auto;
+  overflow: hidden;
     &__number{
       font-size: 20px;
       line-height: 22px;
@@ -26,7 +23,7 @@
           background-color: white;
           position: absolute;
           bottom: 5px;
-          left: 25px;
+          left: 20px;
         }
     }
     &__title{
@@ -37,10 +34,41 @@
       color: #FFFFFF;
       opacity: 0.9;
       font-weight: normal;
+      transform: translateY(50px);
+      transition: all 1s;
     }
     
     .btn{
-      margin-top: 10px;
-      display: none;
+      transform: translateY(100px);
+      transition: all 0.8s;
+      
+    }
+    &-wrapper{
+      padding: 11px;
+      margin-right: 39px;
+      z-index: 10;
+        &:last-child{
+          margin-right: 0;
+        }
+        .card__number,.card__number::after{
+          transition: all 0.8s;
+        }
+      &:hover{
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+          .card__title{
+            transform: translateY(-5px);
+          }
+          .btn{
+            display: inline-block;
+            transform: translateY(0);
+          }
+          .card__number{
+            transform: translateX(85px);
+            &::after{
+              transform: translateX(-105px);
+            }
+          }
+      }
     }
 }
